@@ -1,0 +1,475 @@
+body {
+    font-family: "Monstserrat", 'segeo-UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+#topbar {
+    background-color: #008080;
+    color: #ddd;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.top-contact, .sosmed {
+    list-style: none;
+    padding: 0;
+}
+
+#topbar li {
+    display: inline-flex;
+}
+
+#topbar li a {
+    color: aliceblue;
+    display: inline-block;
+    padding: 0 20px;
+}
+#topbar .sosmed li a {
+    padding: 0 5px;
+
+}
+#topbar .sosmed li a i {
+    color: aliceblue;
+}
+
+/*css untuk header */
+
+header{
+    padding: 10px 0;
+}
+
+.brand {
+    display: flow-root;
+}
+
+.brand .brand-name h1 {
+    font-size:35px;
+    color: #008080;
+    text-transform: uppercase;
+    padding-bottom: -100%;
+}
+
+.brand .brand-name h4 {
+    font-size: 15px;
+    font-family: rateway, 'segeo-UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+.pembungkus-searchbox {
+    display: flex;
+    align-items: center;
+}
+
+.searchbox {
+    width: 100%;
+}
+
+.btn.btn-utama, 
+a.btn.btn-utama {
+    background-color: #008080;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-utama:hover,
+a.btn.btn-utama:hover {
+    background-color: #008080;
+    color: #40E0D0;
+}
+
+/* css untuk menu/navbar */
+
+.navbar {
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    border-bottom: 5px solid #EDF259;
+}
+
+.bg-Hijau {
+    background-color: #008080;
+    color: #626462;
+    
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show > .nav-link {
+
+    color: #fff;
+}
+
+.active {
+    background-color: #f3f2f2;
+    color: #008080;
+}
+
+li.nav-item-active a{
+    color: #008080;
+}
+
+.nav-item {
+    padding: 2px 5px;
+}
+
+/* css untuk slider hero area */
+
+#hero-area {
+    position: relative;
+}
+
+#slider-hero-nav .owl-prev,
+#slider-hero-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background-color: #008080;
+    color: aliceblue;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+#slider-hero-nav .owl-prev{
+    left: 0;
+    border-radius: 0 50px 50px 0;
+}
+
+#slider-hero-nav .owl-next {
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+
+#slider-hero-nav .owl-prev:hover,
+#slider-hero-nav .owl-next:hover {
+    cursor: pointer;
+    background-color: #788D60;
+}
+#hero-area .slider-item-content1 {
+    position: absolute;
+
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    text-align: center;
+    font-family: raleway, 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: openingAnimation 1.5s forwards ease-out;
+}
+
+@keyframes openingAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+
+
+#hero-area .slider-item-content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    font-family: raleway, 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    opacity: 0;
+    animation: fadeIn 5s infinite;
+    padding: 50px;
+}
+
+    @keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity:  1;
+    }
+}
+
+#hero-area .slider-item-content h2 {
+    font-size: 35px;
+    font-weight: 400;
+
+}
+
+#hero-area .slider-item-content p {
+    font-size: 16px;
+}
+
+/* css untuk galeri */
+
+.container {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.container h1 {
+    padding-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* css untuk footer */
+
+footer {
+    color: #fff;
+    background-color:#008080;
+    padding: 80px 0;
+}
+
+footer .footer-col2:first-of-type {
+    padding-right: 20px;
+}
+
+footer .brand img {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+footer .brand h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+footer .footer-col2 {
+  margin-top: 80px ;
+
+}
+
+footer .footer-col3{
+    margin-top: 80px ;
+}
+
+footer .tentang {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    border-bottom: 1.5px dashed rgba(255, 255, 255, 0.5);
+}
+
+footer .sosmed {
+    list-style: none;
+    color: #fff;
+}
+
+footer .sosmed li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer .sosmed li a {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+footer .sosmed li a:hover{
+    color: #ddd;
+}
+
+footer .contact li {
+    list-style: none;
+    padding: 0;
+    margin-left: -40px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer .contact i {
+    margin: 10px 0;
+}
+
+.footer-col2 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-col3 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-col2 .alamat {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px 0;
+}
+
+.footer-col3 .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col3 .footer-nav a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 28px;
+    transition: all 0.5s;
+}
+
+.footer-col3 .footer-nav a:hover {
+    border-bottom: 1px dashed #fff;
+}
+
+.footer-copyright .container{
+border-top: 1px solid #ddd;
+padding: 10px 0;
+}
+
+.footer-copyright {
+    margin-top: 60px;
+
+}
+
+.footer-copyright h6 {
+    font-size: 16px;
+    color: #CECECE;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-copyright h6 a {
+    color: inherit;
+}
+
+
+
+/* Floating WhatsApp Icon */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 40px;
+    bottom: 60px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+/* Floating WhatsApp Icon */
+.whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 30px;    
+    color: #fff;
+    background-color:#fcfdfd;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-float :hover{
+    cursor: pointer;
+    background-color: #17ad6f;
+    color: #fff;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+/* WhatsApp Chat Box */
+#whatsapp-chat {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+    border: 1px solid #ddd;
+    width: 300px;
+    border-radius: 5px;
+    z-index: 101;
+}
+
+.header-chat {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.close-chat {
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.chat-box {
+    padding: 20px;
+}
+
+
+
